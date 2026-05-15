@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-M14a_API_Suite" class="navigator-link">
+              <span class="suite-name border-passed">M14a-API-Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-M14a_API_Suite" class="navigator-link ">
+                    <span>C:\Users\tinju.samuel\eclipse-workspace\MES_M14\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-M14a_API_Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-M14a_API_Suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-M14a_API_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-M14a_API_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-M14a_API_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-M14a_API_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-M14a_API_Suite" class="hide-methods passed suite-M14a_API_Suite"> (hide)</a> <!-- hide-methods passed suite-M14a_API_Suite -->
+                      <a href="#" panel-name="suite-M14a_API_Suite" class="show-methods passed suite-M14a_API_Suite"> (show)</a> <!-- show-methods passed suite-M14a_API_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-M14a_API_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.BindTests" class="method navigator-link" hash-for-method="bindEmptyToken">bindEmptyToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.BindTests" class="method navigator-link" hash-for-method="bindMalformedToken">bindMalformedToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.BindTests" class="method navigator-link" hash-for-method="bindMissingServerVersion">bindMissingServerVersion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.BindTests" class="method navigator-link" hash-for-method="bindUnknownStation">bindUnknownStation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.BindTests" class="method navigator-link" hash-for-method="bindValid">bindValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.UnitProcessCommitTests" class="method navigator-link" hash-for-method="commitFailRecord">commitFailRecord</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.UnitProcessCommitTests" class="method navigator-link" hash-for-method="commitInvalidSn">commitInvalidSn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.UnitProcessCommitTests" class="method navigator-link" hash-for-method="commitNoAuth">commitNoAuth</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.UnitProcessCommitTests" class="method navigator-link" hash-for-method="commitUnknownToken">commitUnknownToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.UnitProcessCommitTests" class="method navigator-link" hash-for-method="commitValidPass">commitValidPass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.LoginTests" class="method navigator-link" hash-for-method="loginEmptyPassword">loginEmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.LoginTests" class="method navigator-link" hash-for-method="loginNoStationPermission">loginNoStationPermission</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.LoginTests" class="method navigator-link" hash-for-method="loginUnknownUser">loginUnknownUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.LoginTests" class="method navigator-link" hash-for-method="loginValid">loginValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.LoginTests" class="method navigator-link" hash-for-method="loginWrongPassword">loginWrongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.UnitProcessCheckTests" class="method navigator-link" hash-for-method="unitProcessCheckEmptySn">unitProcessCheckEmptySn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.UnitProcessCheckTests" class="method navigator-link" hash-for-method="unitProcessCheckInvalidSn">unitProcessCheckInvalidSn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.UnitProcessCheckTests" class="method navigator-link" hash-for-method="unitProcessCheckMalformedSn">unitProcessCheckMalformedSn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.UnitProcessCheckTests" class="method navigator-link" hash-for-method="unitProcessCheckNoAuth">unitProcessCheckNoAuth</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-M14a_API_Suite" title="com.mes.m14a.tests.api.UnitProcessCheckTests" class="method navigator-link" hash-for-method="unitProcessCheckValid">unitProcessCheckValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-M14a_API_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-M14a_API_Suite" class="panel M14a_API_Suite">
+          <div class="suite-M14a_API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mes.m14a.tests.api.UnitProcessCommitTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="commitFailRecord">
+                  </a> <!-- commitFailRecord -->
+                  <span class="method-name">commitFailRecord</span>
+                  <em>
+(Fail-record commit with failing tests/messages -> Result=OK)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="commitInvalidSn">
+                  </a> <!-- commitInvalidSn -->
+                  <span class="method-name">commitInvalidSn</span>
+                  <em>
+(Commit unknown SN (spec: Result=NG/WIP001; this build: OK - no SN validation))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="commitNoAuth">
+                  </a> <!-- commitNoAuth -->
+                  <span class="method-name">commitNoAuth</span>
+                  <em>
+(Commit with empty Hwd -> InvalidToken)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="commitUnknownToken">
+                  </a> <!-- commitUnknownToken -->
+                  <span class="method-name">commitUnknownToken</span>
+                  <em>
+(Commit with unknown Hwd -> InvalidToken)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="commitValidPass">
+                  </a> <!-- commitValidPass -->
+                  <span class="method-name">commitValidPass</span>
+                  <em>
+(Pass commit for routed SN -> Result=OK)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-M14a_API_Suite-class-passed -->
+          <div class="suite-M14a_API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mes.m14a.tests.api.BindTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bindEmptyToken">
+                  </a> <!-- bindEmptyToken -->
+                  <span class="method-name">bindEmptyToken</span>
+                  <em>
+(TC_API_BIND_I03 - empty Hwd -> InvalidToken)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bindMalformedToken">
+                  </a> <!-- bindMalformedToken -->
+                  <span class="method-name">bindMalformedToken</span>
+                  <em>
+(TC_API_BIND_I02 - malformed Hwd -> InvalidToken)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bindMissingServerVersion">
+                  </a> <!-- bindMissingServerVersion -->
+                  <span class="method-name">bindMissingServerVersion</span>
+                  <em>
+(TC_API_BIND_I05 - missing ServerVersion -> MissingField)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bindUnknownStation">
+                  </a> <!-- bindUnknownStation -->
+                  <span class="method-name">bindUnknownStation</span>
+                  <em>
+(TC_API_BIND_I01 - unknown SectionCode (spec: Result=NG/AUTO001; this build: returns OK))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bindValid">
+                  </a> <!-- bindValid -->
+                  <span class="method-name">bindValid</span>
+                  <em>
+(TC_API_BIND_V01 - valid Hwd + station -> Result=OK)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-M14a_API_Suite-class-passed -->
+          <div class="suite-M14a_API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mes.m14a.tests.api.UnitProcessCheckTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="unitProcessCheckEmptySn">
+                  </a> <!-- unitProcessCheckEmptySn -->
+                  <span class="method-name">unitProcessCheckEmptySn</span>
+                  <em>
+(Empty SN -> MissingField)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="unitProcessCheckInvalidSn">
+                  </a> <!-- unitProcessCheckInvalidSn -->
+                  <span class="method-name">unitProcessCheckInvalidSn</span>
+                  <em>
+(Invalid SN (spec: Result=NG/WIP001; this build: OK - no SN validation))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="unitProcessCheckMalformedSn">
+                  </a> <!-- unitProcessCheckMalformedSn -->
+                  <span class="method-name">unitProcessCheckMalformedSn</span>
+                  <em>
+(Malformed SN - over-long (spec: WIP001; this build: OK - no SN validation))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="unitProcessCheckNoAuth">
+                  </a> <!-- unitProcessCheckNoAuth -->
+                  <span class="method-name">unitProcessCheckNoAuth</span>
+                  <em>
+(Empty Hwd -> InvalidToken)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="unitProcessCheckValid">
+                  </a> <!-- unitProcessCheckValid -->
+                  <span class="method-name">unitProcessCheckValid</span>
+                  <em>
+(Routing check for known SN -> Result=OK)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-M14a_API_Suite-class-passed -->
+          <div class="suite-M14a_API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mes.m14a.tests.api.LoginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginEmptyPassword">
+                  </a> <!-- loginEmptyPassword -->
+                  <span class="method-name">loginEmptyPassword</span>
+                  <em>
+(TC_API_LOGIN_I03 - empty pwd -> rejected)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginNoStationPermission">
+                  </a> <!-- loginNoStationPermission -->
+                  <span class="method-name">loginNoStationPermission</span>
+                  <em>
+(TC_API_LOGIN_I04 - no-permission user -> LoginFail (this build has no per-station permissions))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUnknownUser">
+                  </a> <!-- loginUnknownUser -->
+                  <span class="method-name">loginUnknownUser</span>
+                  <em>
+(TC_API_LOGIN_I02 - unknown user -> LoginFail)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginValid">
+                  </a> <!-- loginValid -->
+                  <span class="method-name">loginValid</span>
+                  <em>
+(TC_API_LOGIN_V01 - POST login.json -> 36-char GUID Hwd; saved to target/session.json)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWrongPassword">
+                  </a> <!-- loginWrongPassword -->
+                  <span class="method-name">loginWrongPassword</span>
+                  <em>
+(TC_API_LOGIN_I01 - wrong password -> LoginFail)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-M14a_API_Suite-class-passed -->
+        </div> <!-- panel M14a_API_Suite -->
+        <div panel-name="test-xml-M14a_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\tinju.samuel\eclipse-workspace\MES_M14\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;M14a-API-Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.mes.m14a.listeners.ServerSuiteListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.mes.m14a.listeners.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.mes.m14a.listeners.ExcelReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;M14a-Positive&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;positive&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.mes.m14a.tests.api.LoginTests&quot;/&gt;
+      &lt;class name=&quot;com.mes.m14a.tests.api.BindTests&quot;/&gt;
+      &lt;class name=&quot;com.mes.m14a.tests.api.UnitProcessCheckTests&quot;/&gt;
+      &lt;class name=&quot;com.mes.m14a.tests.api.UnitProcessCommitTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- M14a-Positive --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;M14a-Negative&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;negative&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.mes.m14a.tests.api.LoginTests&quot;/&gt;
+      &lt;class name=&quot;com.mes.m14a.tests.api.BindTests&quot;/&gt;
+      &lt;class name=&quot;com.mes.m14a.tests.api.UnitProcessCheckTests&quot;/&gt;
+      &lt;class name=&quot;com.mes.m14a.tests.api.UnitProcessCommitTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- M14a-Negative --&gt;
+&lt;/suite&gt; &lt;!-- M14a-API-Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-M14a_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for M14a-API-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">M14a-Positive (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">M14a-Negative (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-M14a_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for M14a-API-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">negative</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">bindEmptyToken</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">bindMalformedToken</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">bindMissingServerVersion</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">bindUnknownStation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">commitInvalidSn</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">commitNoAuth</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">commitUnknownToken</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginEmptyPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginNoStationPermission</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginUnknownUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWrongPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">unitProcessCheckEmptySn</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">unitProcessCheckInvalidSn</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">unitProcessCheckMalformedSn</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">unitProcessCheckNoAuth</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">positive</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">bindValid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">commitFailRecord</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">commitValidPass</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginValid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">unitProcessCheckValid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-M14a_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for M14a-API-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_M14a_API_Suite');
+function tableData_M14a_API_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginValid')
+data.setCell(0, 2, 'com.mes.m14a.tests.api.LoginTests')
+data.setCell(0, 3, 1737);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'bindValid')
+data.setCell(1, 2, 'com.mes.m14a.tests.api.BindTests')
+data.setCell(1, 3, 99);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'commitNoAuth')
+data.setCell(2, 2, 'com.mes.m14a.tests.api.UnitProcessCommitTests')
+data.setCell(2, 3, 97);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'commitValidPass')
+data.setCell(3, 2, 'com.mes.m14a.tests.api.UnitProcessCommitTests')
+data.setCell(3, 3, 49);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginWrongPassword')
+data.setCell(4, 2, 'com.mes.m14a.tests.api.LoginTests')
+data.setCell(4, 3, 27);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'bindEmptyToken')
+data.setCell(5, 2, 'com.mes.m14a.tests.api.BindTests')
+data.setCell(5, 3, 25);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'unitProcessCheckNoAuth')
+data.setCell(6, 2, 'com.mes.m14a.tests.api.UnitProcessCheckTests')
+data.setCell(6, 3, 24);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'commitUnknownToken')
+data.setCell(7, 2, 'com.mes.m14a.tests.api.UnitProcessCommitTests')
+data.setCell(7, 3, 23);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'bindUnknownStation')
+data.setCell(8, 2, 'com.mes.m14a.tests.api.BindTests')
+data.setCell(8, 3, 23);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'commitInvalidSn')
+data.setCell(9, 2, 'com.mes.m14a.tests.api.UnitProcessCommitTests')
+data.setCell(9, 3, 22);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'commitFailRecord')
+data.setCell(10, 2, 'com.mes.m14a.tests.api.UnitProcessCommitTests')
+data.setCell(10, 3, 20);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'bindMalformedToken')
+data.setCell(11, 2, 'com.mes.m14a.tests.api.BindTests')
+data.setCell(11, 3, 20);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'bindMissingServerVersion')
+data.setCell(12, 2, 'com.mes.m14a.tests.api.BindTests')
+data.setCell(12, 3, 20);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loginNoStationPermission')
+data.setCell(13, 2, 'com.mes.m14a.tests.api.LoginTests')
+data.setCell(13, 3, 19);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'unitProcessCheckEmptySn')
+data.setCell(14, 2, 'com.mes.m14a.tests.api.UnitProcessCheckTests')
+data.setCell(14, 3, 19);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'unitProcessCheckValid')
+data.setCell(15, 2, 'com.mes.m14a.tests.api.UnitProcessCheckTests')
+data.setCell(15, 3, 18);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'loginEmptyPassword')
+data.setCell(16, 2, 'com.mes.m14a.tests.api.LoginTests')
+data.setCell(16, 3, 18);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'unitProcessCheckInvalidSn')
+data.setCell(17, 2, 'com.mes.m14a.tests.api.UnitProcessCheckTests')
+data.setCell(17, 3, 18);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'loginUnknownUser')
+data.setCell(18, 2, 'com.mes.m14a.tests.api.LoginTests')
+data.setCell(18, 3, 17);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'unitProcessCheckMalformedSn')
+data.setCell(19, 2, 'com.mes.m14a.tests.api.UnitProcessCheckTests')
+data.setCell(19, 3, 17);
+window.suiteTableData['M14a_API_Suite']= { tableData: data, tableDiv: 'times-div-M14a_API_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <div id="times-div-M14a_API_Suite">
+              </div> <!-- times-div-M14a_API_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-M14a_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for M14a-API-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-M14a_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">20 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mes.m14a.tests.api.UnitProcessCommitTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">commitValidPass</span>
+                <br/>
+                <span class="ignored-method-name">commitUnknownToken</span>
+                <br/>
+                <span class="ignored-method-name">commitNoAuth</span>
+                <br/>
+                <span class="ignored-method-name">commitInvalidSn</span>
+                <br/>
+                <span class="ignored-method-name">commitFailRecord</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mes.m14a.tests.api.BindTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bindMissingServerVersion</span>
+                <br/>
+                <span class="ignored-method-name">bindUnknownStation</span>
+                <br/>
+                <span class="ignored-method-name">bindValid</span>
+                <br/>
+                <span class="ignored-method-name">bindMalformedToken</span>
+                <br/>
+                <span class="ignored-method-name">bindEmptyToken</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mes.m14a.tests.api.UnitProcessCheckTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">unitProcessCheckInvalidSn</span>
+                <br/>
+                <span class="ignored-method-name">unitProcessCheckEmptySn</span>
+                <br/>
+                <span class="ignored-method-name">unitProcessCheckMalformedSn</span>
+                <br/>
+                <span class="ignored-method-name">unitProcessCheckValid</span>
+                <br/>
+                <span class="ignored-method-name">unitProcessCheckNoAuth</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mes.m14a.tests.api.LoginTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginUnknownUser</span>
+                <br/>
+                <span class="ignored-method-name">loginValid</span>
+                <br/>
+                <span class="ignored-method-name">loginEmptyPassword</span>
+                <br/>
+                <span class="ignored-method-name">loginWrongPassword</span>
+                <br/>
+                <span class="ignored-method-name">loginNoStationPermission</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-M14a_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mes.m14a.tests.api.LoginTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginValid</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mes.m14a.tests.api.BindTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">bindValid</span>
+                <span class="method-start">1744 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mes.m14a.tests.api.UnitProcessCheckTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">unitProcessCheckValid</span>
+                <span class="method-start">1845 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mes.m14a.tests.api.UnitProcessCommitTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">commitFailRecord</span>
+                <span class="method-start">1865 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">commitValidPass</span>
+                <span class="method-start">1887 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mes.m14a.tests.api.LoginTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginEmptyPassword</span>
+                <span class="method-start">1982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginNoStationPermission</span>
+                <span class="method-start">2002 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginUnknownUser</span>
+                <span class="method-start">2023 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWrongPassword</span>
+                <span class="method-start">2042 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mes.m14a.tests.api.BindTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">bindEmptyToken</span>
+                <span class="method-start">2072 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bindMalformedToken</span>
+                <span class="method-start">2100 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bindMissingServerVersion</span>
+                <span class="method-start">2121 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bindUnknownStation</span>
+                <span class="method-start">2143 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mes.m14a.tests.api.UnitProcessCheckTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">unitProcessCheckEmptySn</span>
+                <span class="method-start">2168 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">unitProcessCheckInvalidSn</span>
+                <span class="method-start">2188 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">unitProcessCheckMalformedSn</span>
+                <span class="method-start">2208 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">unitProcessCheckNoAuth</span>
+                <span class="method-start">2228 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mes.m14a.tests.api.UnitProcessCommitTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">commitInvalidSn</span>
+                <span class="method-start">2255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">commitNoAuth</span>
+                <span class="method-start">2279 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">commitUnknownToken</span>
+                <span class="method-start">2379 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

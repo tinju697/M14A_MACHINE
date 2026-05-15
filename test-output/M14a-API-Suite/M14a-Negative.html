@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>TestNG:  M14a-Negative</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>M14a-Negative</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 13 10:28:54 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (425 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>negative </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mes.m14a.tests.api.LoginTests.loginUnknownUser()'><b>loginUnknownUser</b><br>Test class: com.mes.m14a.tests.api.LoginTests<br>Test method: TC_API_LOGIN_I02 - unknown user -> LoginFail</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.LoginTests@5707c1cb</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.LoginTests.loginWrongPassword()'><b>loginWrongPassword</b><br>Test class: com.mes.m14a.tests.api.LoginTests<br>Test method: TC_API_LOGIN_I01 - wrong password -> LoginFail</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.LoginTests@5707c1cb</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.UnitProcessCheckTests.unitProcessCheckNoAuth()'><b>unitProcessCheckNoAuth</b><br>Test class: com.mes.m14a.tests.api.UnitProcessCheckTests<br>Test method: Empty Hwd -> InvalidToken</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.UnitProcessCheckTests@35038141</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.LoginTests.loginEmptyPassword()'><b>loginEmptyPassword</b><br>Test class: com.mes.m14a.tests.api.LoginTests<br>Test method: TC_API_LOGIN_I03 - empty pwd -> rejected</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.LoginTests@5707c1cb</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.LoginTests.loginNoStationPermission()'><b>loginNoStationPermission</b><br>Test class: com.mes.m14a.tests.api.LoginTests<br>Test method: TC_API_LOGIN_I04 - no-permission user -> LoginFail (this build has no per-station permissions)</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.LoginTests@5707c1cb</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.UnitProcessCommitTests.commitUnknownToken()'><b>commitUnknownToken</b><br>Test class: com.mes.m14a.tests.api.UnitProcessCommitTests<br>Test method: Commit with unknown Hwd -> InvalidToken</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.UnitProcessCommitTests@ecf9049</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.BindTests.bindUnknownStation()'><b>bindUnknownStation</b><br>Test class: com.mes.m14a.tests.api.BindTests<br>Test method: TC_API_BIND_I01 - unknown SectionCode (spec: Result=NG/AUTO001; this build: returns OK)</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.BindTests@2b5cb9b2</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.UnitProcessCheckTests.unitProcessCheckInvalidSn()'><b>unitProcessCheckInvalidSn</b><br>Test class: com.mes.m14a.tests.api.UnitProcessCheckTests<br>Test method: Invalid SN (spec: Result=NG/WIP001; this build: OK - no SN validation)</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.UnitProcessCheckTests@35038141</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.BindTests.bindEmptyToken()'><b>bindEmptyToken</b><br>Test class: com.mes.m14a.tests.api.BindTests<br>Test method: TC_API_BIND_I03 - empty Hwd -> InvalidToken</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.BindTests@2b5cb9b2</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.BindTests.bindMalformedToken()'><b>bindMalformedToken</b><br>Test class: com.mes.m14a.tests.api.BindTests<br>Test method: TC_API_BIND_I02 - malformed Hwd -> InvalidToken</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.BindTests@2b5cb9b2</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.BindTests.bindMissingServerVersion()'><b>bindMissingServerVersion</b><br>Test class: com.mes.m14a.tests.api.BindTests<br>Test method: TC_API_BIND_I05 - missing ServerVersion -> MissingField</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.BindTests@2b5cb9b2</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.UnitProcessCheckTests.unitProcessCheckMalformedSn()'><b>unitProcessCheckMalformedSn</b><br>Test class: com.mes.m14a.tests.api.UnitProcessCheckTests<br>Test method: Malformed SN - over-long (spec: WIP001; this build: OK - no SN validation)</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.UnitProcessCheckTests@35038141</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.UnitProcessCommitTests.commitNoAuth()'><b>commitNoAuth</b><br>Test class: com.mes.m14a.tests.api.UnitProcessCommitTests<br>Test method: Commit with empty Hwd -> InvalidToken</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.UnitProcessCommitTests@ecf9049</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.UnitProcessCheckTests.unitProcessCheckEmptySn()'><b>unitProcessCheckEmptySn</b><br>Test class: com.mes.m14a.tests.api.UnitProcessCheckTests<br>Test method: Empty SN -> MissingField</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.UnitProcessCheckTests@35038141</td></tr>
+<tr>
+<td title='com.mes.m14a.tests.api.UnitProcessCommitTests.commitInvalidSn()'><b>commitInvalidSn</b><br>Test class: com.mes.m14a.tests.api.UnitProcessCommitTests<br>Test method: Commit unknown SN (spec: Result=NG/WIP001; this build: OK - no SN validation)</td>
+<td></td>
+<td>0</td>
+<td>com.mes.m14a.tests.api.UnitProcessCommitTests@ecf9049</td></tr>
+</table><p>
+</body>
+</html>

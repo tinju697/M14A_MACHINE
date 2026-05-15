@@ -1,0 +1,5 @@
+{
+  "Hwd": "",
+  "Indicator": "QUERY_RECORD",
+  "SerializeData": "{\"LineCode\":\"\",\"SectionCode\":\"\",\"StationCode\":0,\"OPCategory\":\"LOGIN\",\"OPRequestInfo\":{\"user\":\"admin\",\"pwd\":\"admin\"},\"OPResponseInfo\":{}}"
+}

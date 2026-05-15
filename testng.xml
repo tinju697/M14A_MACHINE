@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="M14a-API-Suite" parallel="false" verbose="1">
+
+    <listeners>
+        <listener class-name="com.mes.m14a.listeners.ServerSuiteListener"/>
+        <listener class-name="com.mes.m14a.listeners.TestListener"/>
+        <listener class-name="com.mes.m14a.listeners.ExcelReportListener"/>
+    </listeners>
+
+    <test name="M14a-Positive">
+        <groups>
+            <run>
+                <include name="positive"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.mes.m14a.tests.api.LoginTests"/>
+            <class name="com.mes.m14a.tests.api.BindTests"/>
+            <class name="com.mes.m14a.tests.api.UnitProcessCheckTests"/>
+            <class name="com.mes.m14a.tests.api.UnitProcessCommitTests"/>
+        </classes>
+    </test>
+
+    <test name="M14a-Negative">
+        <groups>
+            <run>
+                <include name="negative"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.mes.m14a.tests.api.LoginTests"/>
+            <class name="com.mes.m14a.tests.api.BindTests"/>
+            <class name="com.mes.m14a.tests.api.UnitProcessCheckTests"/>
+            <class name="com.mes.m14a.tests.api.UnitProcessCommitTests"/>
+        </classes>
+    </test>
+
+</suite>
