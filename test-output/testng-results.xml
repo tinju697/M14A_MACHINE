@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-13T10:28:52 IST" name="M14a-API-Suite" finished-at="2026-05-13T10:28:55 IST" duration-ms="2439">
+  <suite started-at="2026-05-15T13:34:12 IST" name="M14a-API-Suite" finished-at="2026-05-15T13:34:14 IST" duration-ms="2055">
     <groups>
       <group name="negative">
         <method signature="BindTests.bindEmptyToken()[pri:0, instance:com.mes.m14a.tests.api.BindTests@2b5cb9b2]" name="bindEmptyToken" class="com.mes.m14a.tests.api.BindTests"/>
@@ -29,101 +29,101 @@
         <method signature="UnitProcessCommitTests.commitValidPass()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCommitTests@3a4b0e5d]" name="commitValidPass" class="com.mes.m14a.tests.api.UnitProcessCommitTests"/>
       </group> <!-- positive -->
     </groups>
-    <test started-at="2026-05-13T10:28:52 IST" name="M14a-Positive" finished-at="2026-05-13T10:28:54 IST" duration-ms="1974">
+    <test started-at="2026-05-15T13:34:12 IST" name="M14a-Positive" finished-at="2026-05-15T13:34:13 IST" duration-ms="1748">
       <class name="com.mes.m14a.tests.api.UnitProcessCheckTests">
-        <test-method signature="unitProcessCheckValid()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCheckTests@1c32886a]" started-at="2026-05-13T10:28:54 IST" name="unitProcessCheckValid" description="Routing check for known SN -&gt; Result=OK" finished-at="2026-05-13T10:28:54 IST" duration-ms="18" status="PASS">
+        <test-method signature="unitProcessCheckValid()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCheckTests@1c32886a]" started-at="2026-05-15T13:34:13 IST" name="unitProcessCheckValid" description="Routing check for known SN -&gt; Result=OK" finished-at="2026-05-15T13:34:13 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unitProcessCheckValid -->
       </class> <!-- com.mes.m14a.tests.api.UnitProcessCheckTests -->
       <class name="com.mes.m14a.tests.api.LoginTests">
-        <test-method signature="loginValid()[pri:0, instance:com.mes.m14a.tests.api.LoginTests@6970140a]" started-at="2026-05-13T10:28:52 IST" name="loginValid" description="TC_API_LOGIN_V01 - POST login.json -&gt; 36-char GUID Hwd; saved to target/session.json" finished-at="2026-05-13T10:28:54 IST" duration-ms="1737" status="PASS">
+        <test-method signature="loginValid()[pri:0, instance:com.mes.m14a.tests.api.LoginTests@6970140a]" started-at="2026-05-15T13:34:12 IST" name="loginValid" description="TC_API_LOGIN_V01 - POST login.json -&gt; 36-char GUID Hwd; saved to target/session.json" finished-at="2026-05-15T13:34:13 IST" duration-ms="1557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginValid -->
       </class> <!-- com.mes.m14a.tests.api.LoginTests -->
       <class name="com.mes.m14a.tests.api.BindTests">
-        <test-method signature="bindValid()[pri:0, instance:com.mes.m14a.tests.api.BindTests@5aceec94]" started-at="2026-05-13T10:28:54 IST" name="bindValid" description="TC_API_BIND_V01 - valid Hwd + station -&gt; Result=OK" finished-at="2026-05-13T10:28:54 IST" duration-ms="99" status="PASS">
+        <test-method signature="bindValid()[pri:0, instance:com.mes.m14a.tests.api.BindTests@5aceec94]" started-at="2026-05-15T13:34:13 IST" name="bindValid" description="TC_API_BIND_V01 - valid Hwd + station -&gt; Result=OK" finished-at="2026-05-15T13:34:13 IST" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bindValid -->
       </class> <!-- com.mes.m14a.tests.api.BindTests -->
       <class name="com.mes.m14a.tests.api.UnitProcessCommitTests">
-        <test-method signature="commitFailRecord()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCommitTests@3a4b0e5d]" started-at="2026-05-13T10:28:54 IST" name="commitFailRecord" description="Fail-record commit with failing tests/messages -&gt; Result=OK" finished-at="2026-05-13T10:28:54 IST" duration-ms="20" status="PASS">
+        <test-method signature="commitFailRecord()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCommitTests@3a4b0e5d]" started-at="2026-05-15T13:34:13 IST" name="commitFailRecord" description="Fail-record commit with failing tests/messages -&gt; Result=OK" finished-at="2026-05-15T13:34:13 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commitFailRecord -->
-        <test-method signature="commitValidPass()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCommitTests@3a4b0e5d]" started-at="2026-05-13T10:28:54 IST" name="commitValidPass" description="Pass commit for routed SN -&gt; Result=OK" finished-at="2026-05-13T10:28:54 IST" duration-ms="49" status="PASS">
+        <test-method signature="commitValidPass()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCommitTests@3a4b0e5d]" started-at="2026-05-15T13:34:13 IST" name="commitValidPass" description="Pass commit for routed SN -&gt; Result=OK" finished-at="2026-05-15T13:34:13 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commitValidPass -->
       </class> <!-- com.mes.m14a.tests.api.UnitProcessCommitTests -->
     </test> <!-- M14a-Positive -->
-    <test started-at="2026-05-13T10:28:54 IST" name="M14a-Negative" finished-at="2026-05-13T10:28:55 IST" duration-ms="425">
+    <test started-at="2026-05-15T13:34:13 IST" name="M14a-Negative" finished-at="2026-05-15T13:34:14 IST" duration-ms="276">
       <class name="com.mes.m14a.tests.api.UnitProcessCheckTests">
-        <test-method signature="unitProcessCheckEmptySn()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCheckTests@35038141]" started-at="2026-05-13T10:28:54 IST" name="unitProcessCheckEmptySn" description="Empty SN -&gt; MissingField" finished-at="2026-05-13T10:28:54 IST" duration-ms="19" status="PASS">
+        <test-method signature="unitProcessCheckEmptySn()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCheckTests@35038141]" started-at="2026-05-15T13:34:14 IST" name="unitProcessCheckEmptySn" description="Empty SN -&gt; MissingField" finished-at="2026-05-15T13:34:14 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unitProcessCheckEmptySn -->
-        <test-method signature="unitProcessCheckInvalidSn()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCheckTests@35038141]" started-at="2026-05-13T10:28:54 IST" name="unitProcessCheckInvalidSn" description="Invalid SN (spec: Result=NG/WIP001; this build: OK - no SN validation)" finished-at="2026-05-13T10:28:54 IST" duration-ms="18" status="PASS">
+        <test-method signature="unitProcessCheckInvalidSn()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCheckTests@35038141]" started-at="2026-05-15T13:34:14 IST" name="unitProcessCheckInvalidSn" description="Invalid SN (spec: Result=NG/WIP001; this build: OK - no SN validation)" finished-at="2026-05-15T13:34:14 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unitProcessCheckInvalidSn -->
-        <test-method signature="unitProcessCheckMalformedSn()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCheckTests@35038141]" started-at="2026-05-13T10:28:54 IST" name="unitProcessCheckMalformedSn" description="Malformed SN - over-long (spec: WIP001; this build: OK - no SN validation)" finished-at="2026-05-13T10:28:54 IST" duration-ms="17" status="PASS">
+        <test-method signature="unitProcessCheckMalformedSn()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCheckTests@35038141]" started-at="2026-05-15T13:34:14 IST" name="unitProcessCheckMalformedSn" description="Malformed SN - over-long (spec: WIP001; this build: OK - no SN validation)" finished-at="2026-05-15T13:34:14 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unitProcessCheckMalformedSn -->
-        <test-method signature="unitProcessCheckNoAuth()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCheckTests@35038141]" started-at="2026-05-13T10:28:54 IST" name="unitProcessCheckNoAuth" description="Empty Hwd -&gt; InvalidToken" finished-at="2026-05-13T10:28:54 IST" duration-ms="24" status="PASS">
+        <test-method signature="unitProcessCheckNoAuth()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCheckTests@35038141]" started-at="2026-05-15T13:34:14 IST" name="unitProcessCheckNoAuth" description="Empty Hwd -&gt; InvalidToken" finished-at="2026-05-15T13:34:14 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unitProcessCheckNoAuth -->
       </class> <!-- com.mes.m14a.tests.api.UnitProcessCheckTests -->
       <class name="com.mes.m14a.tests.api.LoginTests">
-        <test-method signature="loginEmptyPassword()[pri:0, instance:com.mes.m14a.tests.api.LoginTests@5707c1cb]" started-at="2026-05-13T10:28:54 IST" name="loginEmptyPassword" description="TC_API_LOGIN_I03 - empty pwd -&gt; rejected" finished-at="2026-05-13T10:28:54 IST" duration-ms="18" status="PASS">
+        <test-method signature="loginEmptyPassword()[pri:0, instance:com.mes.m14a.tests.api.LoginTests@5707c1cb]" started-at="2026-05-15T13:34:13 IST" name="loginEmptyPassword" description="TC_API_LOGIN_I03 - empty pwd -&gt; rejected" finished-at="2026-05-15T13:34:14 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginEmptyPassword -->
-        <test-method signature="loginNoStationPermission()[pri:0, instance:com.mes.m14a.tests.api.LoginTests@5707c1cb]" started-at="2026-05-13T10:28:54 IST" name="loginNoStationPermission" description="TC_API_LOGIN_I04 - no-permission user -&gt; LoginFail (this build has no per-station permissions)" finished-at="2026-05-13T10:28:54 IST" duration-ms="19" status="PASS">
+        <test-method signature="loginNoStationPermission()[pri:0, instance:com.mes.m14a.tests.api.LoginTests@5707c1cb]" started-at="2026-05-15T13:34:14 IST" name="loginNoStationPermission" description="TC_API_LOGIN_I04 - no-permission user -&gt; LoginFail (this build has no per-station permissions)" finished-at="2026-05-15T13:34:14 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginNoStationPermission -->
-        <test-method signature="loginUnknownUser()[pri:0, instance:com.mes.m14a.tests.api.LoginTests@5707c1cb]" started-at="2026-05-13T10:28:54 IST" name="loginUnknownUser" description="TC_API_LOGIN_I02 - unknown user -&gt; LoginFail" finished-at="2026-05-13T10:28:54 IST" duration-ms="17" status="PASS">
+        <test-method signature="loginUnknownUser()[pri:0, instance:com.mes.m14a.tests.api.LoginTests@5707c1cb]" started-at="2026-05-15T13:34:14 IST" name="loginUnknownUser" description="TC_API_LOGIN_I02 - unknown user -&gt; LoginFail" finished-at="2026-05-15T13:34:14 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUnknownUser -->
-        <test-method signature="loginWrongPassword()[pri:0, instance:com.mes.m14a.tests.api.LoginTests@5707c1cb]" started-at="2026-05-13T10:28:54 IST" name="loginWrongPassword" description="TC_API_LOGIN_I01 - wrong password -&gt; LoginFail" finished-at="2026-05-13T10:28:54 IST" duration-ms="27" status="PASS">
+        <test-method signature="loginWrongPassword()[pri:0, instance:com.mes.m14a.tests.api.LoginTests@5707c1cb]" started-at="2026-05-15T13:34:14 IST" name="loginWrongPassword" description="TC_API_LOGIN_I01 - wrong password -&gt; LoginFail" finished-at="2026-05-15T13:34:14 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWrongPassword -->
       </class> <!-- com.mes.m14a.tests.api.LoginTests -->
       <class name="com.mes.m14a.tests.api.BindTests">
-        <test-method signature="bindEmptyToken()[pri:0, instance:com.mes.m14a.tests.api.BindTests@2b5cb9b2]" started-at="2026-05-13T10:28:54 IST" name="bindEmptyToken" description="TC_API_BIND_I03 - empty Hwd -&gt; InvalidToken" finished-at="2026-05-13T10:28:54 IST" duration-ms="25" status="PASS">
+        <test-method signature="bindEmptyToken()[pri:0, instance:com.mes.m14a.tests.api.BindTests@2b5cb9b2]" started-at="2026-05-15T13:34:14 IST" name="bindEmptyToken" description="TC_API_BIND_I03 - empty Hwd -&gt; InvalidToken" finished-at="2026-05-15T13:34:14 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bindEmptyToken -->
-        <test-method signature="bindMalformedToken()[pri:0, instance:com.mes.m14a.tests.api.BindTests@2b5cb9b2]" started-at="2026-05-13T10:28:54 IST" name="bindMalformedToken" description="TC_API_BIND_I02 - malformed Hwd -&gt; InvalidToken" finished-at="2026-05-13T10:28:54 IST" duration-ms="20" status="PASS">
+        <test-method signature="bindMalformedToken()[pri:0, instance:com.mes.m14a.tests.api.BindTests@2b5cb9b2]" started-at="2026-05-15T13:34:14 IST" name="bindMalformedToken" description="TC_API_BIND_I02 - malformed Hwd -&gt; InvalidToken" finished-at="2026-05-15T13:34:14 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bindMalformedToken -->
-        <test-method signature="bindMissingServerVersion()[pri:0, instance:com.mes.m14a.tests.api.BindTests@2b5cb9b2]" started-at="2026-05-13T10:28:54 IST" name="bindMissingServerVersion" description="TC_API_BIND_I05 - missing ServerVersion -&gt; MissingField" finished-at="2026-05-13T10:28:54 IST" duration-ms="20" status="PASS">
+        <test-method signature="bindMissingServerVersion()[pri:0, instance:com.mes.m14a.tests.api.BindTests@2b5cb9b2]" started-at="2026-05-15T13:34:14 IST" name="bindMissingServerVersion" description="TC_API_BIND_I05 - missing ServerVersion -&gt; MissingField" finished-at="2026-05-15T13:34:14 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bindMissingServerVersion -->
-        <test-method signature="bindUnknownStation()[pri:0, instance:com.mes.m14a.tests.api.BindTests@2b5cb9b2]" started-at="2026-05-13T10:28:54 IST" name="bindUnknownStation" description="TC_API_BIND_I01 - unknown SectionCode (spec: Result=NG/AUTO001; this build: returns OK)" finished-at="2026-05-13T10:28:54 IST" duration-ms="23" status="PASS">
+        <test-method signature="bindUnknownStation()[pri:0, instance:com.mes.m14a.tests.api.BindTests@2b5cb9b2]" started-at="2026-05-15T13:34:14 IST" name="bindUnknownStation" description="TC_API_BIND_I01 - unknown SectionCode (spec: Result=NG/AUTO001; this build: returns OK)" finished-at="2026-05-15T13:34:14 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bindUnknownStation -->
       </class> <!-- com.mes.m14a.tests.api.BindTests -->
       <class name="com.mes.m14a.tests.api.UnitProcessCommitTests">
-        <test-method signature="commitInvalidSn()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCommitTests@ecf9049]" started-at="2026-05-13T10:28:54 IST" name="commitInvalidSn" description="Commit unknown SN (spec: Result=NG/WIP001; this build: OK - no SN validation)" finished-at="2026-05-13T10:28:54 IST" duration-ms="22" status="PASS">
+        <test-method signature="commitInvalidSn()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCommitTests@ecf9049]" started-at="2026-05-15T13:34:14 IST" name="commitInvalidSn" description="Commit unknown SN (spec: Result=NG/WIP001; this build: OK - no SN validation)" finished-at="2026-05-15T13:34:14 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commitInvalidSn -->
-        <test-method signature="commitNoAuth()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCommitTests@ecf9049]" started-at="2026-05-13T10:28:54 IST" name="commitNoAuth" description="Commit with empty Hwd -&gt; InvalidToken" finished-at="2026-05-13T10:28:55 IST" duration-ms="97" status="PASS">
+        <test-method signature="commitNoAuth()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCommitTests@ecf9049]" started-at="2026-05-15T13:34:14 IST" name="commitNoAuth" description="Commit with empty Hwd -&gt; InvalidToken" finished-at="2026-05-15T13:34:14 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commitNoAuth -->
-        <test-method signature="commitUnknownToken()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCommitTests@ecf9049]" started-at="2026-05-13T10:28:55 IST" name="commitUnknownToken" description="Commit with unknown Hwd -&gt; InvalidToken" finished-at="2026-05-13T10:28:55 IST" duration-ms="23" status="PASS">
+        <test-method signature="commitUnknownToken()[pri:0, instance:com.mes.m14a.tests.api.UnitProcessCommitTests@ecf9049]" started-at="2026-05-15T13:34:14 IST" name="commitUnknownToken" description="Commit with unknown Hwd -&gt; InvalidToken" finished-at="2026-05-15T13:34:14 IST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commitUnknownToken -->
