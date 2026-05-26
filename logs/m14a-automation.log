@@ -956,3 +956,75 @@
 2026-05-26 11:04:50.991 [main] INFO  com.mes.m14a.listeners.TestListener - ===== Finished suite: M14a-Negative (15 passed / 0 failed / 0 skipped) =====
 2026-05-26 11:04:52.427 [main] INFO  com.mes.m14a.listeners.ExcelReportListener - Excel report written: C:\Users\tinju.samuel\eclipse-workspace\MES_M14\reports\M14a-API-Suite-TestReport-20260526-110451.xlsx
 2026-05-26 11:04:52.429 [main] INFO  com.mes.m14a.server.ServerManager - Stopping FitMesWpfServer (pid=23112)
+2026-05-26 11:21:12.393 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2026-05-26 11:21:12.615 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\tinju.samuel\eclipse-workspace\MES_M14\testng.xml
+
+2026-05-26 11:21:12.640 [main] INFO  com.mes.m14a.server.ServerManager - Launching FitMesWpfServer window: F:\E Drive\MES Project- A31\FitMesWpfServer 2\FitMesWpfServer\bin\Debug\net8.0-windows\FitMesWpfServer.exe
+2026-05-26 11:21:15.666 [main] INFO  com.mes.m14a.server.ServerManager - 
+2026-05-26 11:21:15.666 [main] INFO  com.mes.m14a.server.ServerManager - ============================================================
+2026-05-26 11:21:15.666 [main] INFO  com.mes.m14a.server.ServerManager -   WAITING FOR FitMesWpfServer to start on localhost:8003
+2026-05-26 11:21:15.667 [main] INFO  com.mes.m14a.server.ServerManager -   ACTION REQUIRED in the WPF window:
+2026-05-26 11:21:15.667 [main] INFO  com.mes.m14a.server.ServerManager -     1. Find the 'FitMesWpfServer' window (Alt+Tab if hidden)
+2026-05-26 11:21:15.667 [main] INFO  com.mes.m14a.server.ServerManager -     2. Set Port    = 8003
+2026-05-26 11:21:15.667 [main] INFO  com.mes.m14a.server.ServerManager -     3. Set Password = whatever you configured (config: server.* / creds.*)
+2026-05-26 11:21:15.667 [main] INFO  com.mes.m14a.server.ServerManager -     4. Click 'Start Server'
+2026-05-26 11:21:15.667 [main] INFO  com.mes.m14a.server.ServerManager - ============================================================
+2026-05-26 11:21:15.667 [main] INFO  com.mes.m14a.server.ServerManager - 
+2026-05-26 11:21:15.669 [main] INFO  com.mes.m14a.server.ServerManager - FitMesWpfServer is accepting connections on localhost:8003
+2026-05-26 11:21:15.680 [main] INFO  com.mes.m14a.listeners.TestListener - ===== Starting suite: M14a-Positive =====
+2026-05-26 11:21:15.720 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: loginValid
+2026-05-26 11:21:15.825 [main] INFO  com.mes.m14a.api.EapApiClient - POST http://localhost:8003/api/v1/EapApi/ (raw body)
+2026-05-26 11:21:17.625 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : loginValid
+2026-05-26 11:21:17.634 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: bindValid
+2026-05-26 11:21:17.707 [main] INFO  com.mes.m14a.api.M14aOps - LOGIN succeeded for user='admin' -> Hwd token = 4630a51b-6570-42a6-87d1-16b0ec3aadf4
+2026-05-26 11:21:17.733 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : bindValid
+2026-05-26 11:21:17.738 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: unitProcessCheckValid
+2026-05-26 11:21:17.761 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : unitProcessCheckValid
+2026-05-26 11:21:17.764 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: commitFailRecord
+2026-05-26 11:21:17.790 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : commitFailRecord
+2026-05-26 11:21:17.796 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: commitValidPass
+2026-05-26 11:21:17.843 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : commitValidPass
+2026-05-26 11:21:17.845 [main] INFO  com.mes.m14a.listeners.TestListener - ===== Finished suite: M14a-Positive (5 passed / 0 failed / 0 skipped) =====
+2026-05-26 11:21:17.877 [main] INFO  com.mes.m14a.listeners.TestListener - ===== Starting suite: M14a-Negative =====
+2026-05-26 11:21:17.880 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: loginEmptyPassword
+2026-05-26 11:21:17.900 [main] INFO  com.mes.m14a.api.M14aOps - LOGIN failed   for user='admin' -> Display = LoginFail: invalid user or password
+2026-05-26 11:21:17.901 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : loginEmptyPassword
+2026-05-26 11:21:17.905 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: loginNoStationPermission
+2026-05-26 11:21:17.924 [main] INFO  com.mes.m14a.api.M14aOps - LOGIN failed   for user='unauth_user' -> Display = LoginFail: invalid user or password
+2026-05-26 11:21:17.925 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : loginNoStationPermission
+2026-05-26 11:21:17.928 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: loginUnknownUser
+2026-05-26 11:21:17.945 [main] INFO  com.mes.m14a.api.M14aOps - LOGIN failed   for user='pppp' -> Display = LoginFail: invalid user or password
+2026-05-26 11:21:17.945 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : loginUnknownUser
+2026-05-26 11:21:17.948 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: loginWrongPassword
+2026-05-26 11:21:17.966 [main] INFO  com.mes.m14a.api.M14aOps - LOGIN failed   for user='admin' -> Display = LoginFail: invalid user or password
+2026-05-26 11:21:17.967 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : loginWrongPassword
+2026-05-26 11:21:17.969 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: bindEmptyToken
+2026-05-26 11:21:17.991 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : bindEmptyToken
+2026-05-26 11:21:17.993 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: bindMalformedToken
+2026-05-26 11:21:18.011 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : bindMalformedToken
+2026-05-26 11:21:18.013 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: bindMissingServerVersion
+2026-05-26 11:21:18.034 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : bindMissingServerVersion
+2026-05-26 11:21:18.038 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: bindUnknownStation
+2026-05-26 11:21:18.060 [main] WARN  com.mes.m14a.tests.api.BindTests - SERVER PERMISSIVE: BIND with SectionCode=FAKE / StationCode=99999999 returned OK. Spec expects Result=NG with AUTO001. Marking PASS-with-warning so this test documents the gap rather than blocking the run.
+2026-05-26 11:21:18.061 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : bindUnknownStation
+2026-05-26 11:21:18.065 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: unitProcessCheckEmptySn
+2026-05-26 11:21:18.091 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : unitProcessCheckEmptySn
+2026-05-26 11:21:18.093 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: unitProcessCheckInvalidSn
+2026-05-26 11:21:18.115 [main] WARN  com.mes.m14a.tests.api.UnitProcessCheckTests - SERVER PERMISSIVE: UNIT_PROCESS_CHECK with SN=BAD-SN-XYZ returned Result=OK. Spec expects Result=NG/WIP001.
+2026-05-26 11:21:18.116 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : unitProcessCheckInvalidSn
+2026-05-26 11:21:18.119 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: unitProcessCheckMalformedSn
+2026-05-26 11:21:18.138 [main] WARN  com.mes.m14a.tests.api.UnitProcessCheckTests - SERVER PERMISSIVE: UNIT_PROCESS_CHECK with over-long SN returned Result=OK. Spec expects Result=NG/WIP001.
+2026-05-26 11:21:18.139 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : unitProcessCheckMalformedSn
+2026-05-26 11:21:18.143 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: unitProcessCheckNoAuth
+2026-05-26 11:21:18.168 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : unitProcessCheckNoAuth
+2026-05-26 11:21:18.171 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: commitInvalidSn
+2026-05-26 11:21:18.188 [main] WARN  com.mes.m14a.tests.api.UnitProcessCommitTests - SERVER PERMISSIVE: UNIT_PROCESS_COMMIT with SN=BAD-SN-XYZ returned Result=OK. Spec expects NG/WIP001.
+2026-05-26 11:21:18.188 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : commitInvalidSn
+2026-05-26 11:21:18.191 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: commitNoAuth
+2026-05-26 11:21:18.205 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : commitNoAuth
+2026-05-26 11:21:18.207 [main] INFO  com.mes.m14a.listeners.TestListener - >> START: commitUnknownToken
+2026-05-26 11:21:18.237 [main] INFO  com.mes.m14a.listeners.TestListener - << PASS : commitUnknownToken
+2026-05-26 11:21:18.239 [main] INFO  com.mes.m14a.listeners.TestListener - ===== Finished suite: M14a-Negative (15 passed / 0 failed / 0 skipped) =====
+2026-05-26 11:21:19.283 [main] INFO  com.mes.m14a.listeners.ExcelReportListener - Excel report written: C:\Users\tinju.samuel\eclipse-workspace\MES_M14\reports\M14a-API-Suite-TestReport-20260526-112118.xlsx
+2026-05-26 11:21:19.285 [main] INFO  com.mes.m14a.server.ServerManager - Stopping FitMesWpfServer (pid=20636)
