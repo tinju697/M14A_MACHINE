@@ -4,16 +4,94 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+  branches:
+    include:
+      - master
+      - main
+      - develop
+      - feature/*
+
+pr:
+  branches:
+    include:
+      - master
+      - main
+      - develop
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'windows-latest'
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+variables:
+  MAVEN_CACHE_FOLDER: $(Pipeline.Workspace)/.m2/repository
+  MAVEN_OPTS: '-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+stages:
+  - stage: Build_And_Test
+    displayName: 'Build and Test'
+    jobs:
+      - job: Build
+        displayName: 'Build, Test and Publish'
+        timeoutInMinutes: 60
+        steps:
+          - task: JavaToolInstaller@0
+            displayName: 'Install Java 11'
+            inputs:
+              versionSpec: '11'
+              jdkArchitectureOption: 'x64'
+              jdkSourceOption: 'PreInstalled'
+
+          - task: Cache@2
+            displayName: 'Cache Maven local repository'
+            inputs:
+              key: 'maven | "$(Agent.OS)" | **/pom.xml'
+              restoreKeys: |
+                maven | "$(Agent.OS)"
+                maven
+              path: $(MAVEN_CACHE_FOLDER)
+
+          - task: Maven@4
+            displayName: 'Maven compile'
+            inputs:
+              mavenPomFile: 'pom.xml'
+              goals: 'clean compile'
+              options: '-B $(MAVEN_OPTS)'
+              javaHomeOption: 'JDKVersion'
+              jdkVersionOption: '1.11'
+              mavenAuthenticateFeed: false
+              effectivePomSkip: false
+
+          - task: Maven@4
+            displayName: 'Maven test (TestNG suite)'
+            inputs:
+              mavenPomFile: 'pom.xml'
+              goals: 'test'
+              options: '-B $(MAVEN_OPTS) -DsuiteXmlFile=testng.xml'
+              publishJUnitResults: true
+              testResultsFiles: '**/test-output/junitreports/TEST-*.xml'
+              testRunTitle: 'M14a API TestNG Suite'
+              javaHomeOption: 'JDKVersion'
+              jdkVersionOption: '1.11'
+
+          - task: PublishPipelineArtifact@1
+            displayName: 'Publish TestNG HTML reports'
+            condition: succeededOrFailed()
+            inputs:
+              targetPath: 'test-output'
+              artifact: 'testng-reports'
+              publishLocation: 'pipeline'
+
+          - task: PublishPipelineArtifact@1
+            displayName: 'Publish Excel test reports'
+            condition: succeededOrFailed()
+            inputs:
+              targetPath: 'reports'
+              artifact: 'excel-reports'
+              publishLocation: 'pipeline'
+
+          - task: PublishPipelineArtifact@1
+            displayName: 'Publish server logs'
+            condition: succeededOrFailed()
+            inputs:
+              targetPath: 'logs'
+              artifact: 'server-logs'
+              publishLocation: 'pipeline'
