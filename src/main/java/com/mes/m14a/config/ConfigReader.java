@@ -49,6 +49,8 @@ public final class ConfigReader {
     private ConfigReader() {}
 
     public static String get(String key) {
+        String sys = System.getProperty(key);
+        if (sys != null && !sys.isEmpty()) return sys;
         String value = PROPS.getProperty(key);
         if (value == null) {
             throw new IllegalArgumentException("Missing config key: " + key);
@@ -57,6 +59,8 @@ public final class ConfigReader {
     }
 
     public static String get(String key, String defaultValue) {
+        String sys = System.getProperty(key);
+        if (sys != null && !sys.isEmpty()) return sys;
         return PROPS.getProperty(key, defaultValue);
     }
 

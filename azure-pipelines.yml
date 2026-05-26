@@ -63,7 +63,9 @@ stages:
             inputs:
               mavenPomFile: 'pom.xml'
               goals: 'test'
-              options: '-B $(MAVEN_OPTS) -DsuiteXmlFile=testng.xml'
+              # server.useStub=true switches ServerManager to the in-process StubEapServer
+              # so the suite does not depend on FitMesWpfServer.exe (which only exists on dev machines).
+              options: '-B $(MAVEN_OPTS) -DsuiteXmlFile=testng.xml -Dserver.useStub=true'
               publishJUnitResults: true
               testResultsFiles: '**/test-output/junitreports/TEST-*.xml'
               testRunTitle: 'M14a API TestNG Suite'
